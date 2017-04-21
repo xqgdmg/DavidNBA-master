@@ -8,24 +8,23 @@ import android.view.View;
 import com.yuyh.library.utils.log.LogUtils;
 
 /**
- * 支持emptyView
- *
- * @author yuyh.
- * @date 16/6/10.
+ * 设置 emptyView
+ * 设置 adapter
  */
 public class SupportRecyclerView extends RecyclerView {
     private View emptyView;
 
+     // RecyclerView 中的 adapter 数据变化的观察者
     private AdapterDataObserver emptyObserver = new AdapterDataObserver() {
         @Override
         public void onChanged() {
             LogUtils.i("smy", "adapter changed");
-            Adapter adapter = getAdapter();
+            Adapter adapter = getAdapter(); // RecyclerView getAdapter()
             if (adapter != null && emptyView != null) {
-                if (adapter.getItemCount() == 0) {
+                if (adapter.getItemCount() == 0) {  // 数据为空
                     LogUtils.i("adapter visible");
                     emptyView.setVisibility(View.VISIBLE);
-                    SupportRecyclerView.this.setVisibility(View.GONE);
+                    SupportRecyclerView.this.setVisibility(View.GONE); // 把 RecyclerView 消失
                 } else {
                     LogUtils.i("adapter gone");
                     emptyView.setVisibility(View.GONE);
@@ -48,23 +47,24 @@ public class SupportRecyclerView extends RecyclerView {
         super(context, attrs, defStyle);
     }
 
+    /*
+     * 设置适配器，为什么不是重写的方法,为什么要设置两次 adapter
+     */
     public void setAdapter(Adapter adapter) {
         Adapter oldAdapter = getAdapter();
         if (oldAdapter != null && emptyObserver != null) {
-            oldAdapter.unregisterAdapterDataObserver(emptyObserver);
+            oldAdapter.unregisterAdapterDataObserver(emptyObserver); // 不监听 adapter 的数据变化
         }
         super.setAdapter(adapter);
 
         if (adapter != null) {
-            adapter.registerAdapterDataObserver(emptyObserver);
+            adapter.registerAdapterDataObserver(emptyObserver);// 监听 adapter 的数据变化
         }
         emptyObserver.onChanged();
     }
 
     /**
-     * set view when no content item
-     *
-     * @param emptyView visiable view when items is empty
+     * 设置一个空的布局，用 butterKnife 绑定一个布局，直接可以
      */
     public void setEmptyView(View emptyView) {
         this.emptyView = emptyView;

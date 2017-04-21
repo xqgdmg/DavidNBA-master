@@ -6,6 +6,7 @@ import java.util.Calendar;
 
 /**
  * 防止重复点击的点击监听
+ * 1秒内不能点击两次
  */
 public abstract class NoDoubleClickListener implements View.OnClickListener {
 

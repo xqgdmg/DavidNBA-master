@@ -40,7 +40,7 @@ public class NewsListFragment extends BaseLazyFragment {
     MaterialRefreshLayout materialRefreshLayout;
     @InjectView(R.id.recyclerview)
     SupportRecyclerView recyclerView;
-    @InjectView(R.id.emptyView)
+    @InjectView(R.id.emptyView)  // 这个是一个布局，可以这样写的
     View emptyView;
     private NewsAdapter adapter;
     private List<NewsItem.NewsItemBean> list = new ArrayList<>();

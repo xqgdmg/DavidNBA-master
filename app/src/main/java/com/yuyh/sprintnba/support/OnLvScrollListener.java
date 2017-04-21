@@ -3,6 +3,9 @@ package com.yuyh.sprintnba.support;
 import android.view.View;
 import android.widget.AbsListView;
 
+/*
+ * 判断 listView 是否滚动到了底部
+ */
 public class OnLvScrollListener implements OnBottomListener, AbsListView.OnScrollListener {
 
     private int mListViewHeight = 0;

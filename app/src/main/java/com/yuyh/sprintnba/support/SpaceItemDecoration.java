@@ -5,8 +5,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * @author yuyh.
- * @date 16/6/7.
+ * for drawing dividers
+ * between items, highlights, visual grouping boundaries and more.
  */
 public class SpaceItemDecoration extends RecyclerView.ItemDecoration{
 
