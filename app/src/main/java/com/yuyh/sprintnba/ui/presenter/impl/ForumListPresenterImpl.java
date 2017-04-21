@@ -12,8 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author yuyh.
- * @date 16/6/25.
+ * 为何只看到 view需要干的事情
  */
 public class ForumListPresenterImpl implements Presenter {
 
