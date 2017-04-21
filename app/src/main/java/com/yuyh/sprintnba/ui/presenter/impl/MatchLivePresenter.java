@@ -3,10 +3,10 @@ package com.yuyh.sprintnba.ui.presenter.impl;
 import android.app.Activity;
 import android.content.Context;
 
-import com.yuyh.sprintnba.http.api.RequestCallback;
-import com.yuyh.sprintnba.http.api.tencent.TencentService;
-import com.yuyh.sprintnba.http.bean.match.LiveDetail;
-import com.yuyh.sprintnba.http.bean.match.LiveIndex;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.api.tencent.TencentService;
+import com.yuyh.sprintnba.retrofit.bean.match.LiveDetail;
+import com.yuyh.sprintnba.retrofit.bean.match.LiveIndex;
 import com.yuyh.sprintnba.ui.presenter.Presenter;
 import com.yuyh.sprintnba.ui.view.MatchLiveView;
 import com.yuyh.sprintnba.utils.AlarmTimer;

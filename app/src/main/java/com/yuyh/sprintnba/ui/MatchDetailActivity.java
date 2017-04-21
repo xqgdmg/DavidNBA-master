@@ -15,7 +15,7 @@ import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.event.RefreshCompleteEvent;
 import com.yuyh.sprintnba.event.RefreshEvent;
-import com.yuyh.sprintnba.http.bean.match.MatchBaseInfo;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchBaseInfo;
 import com.yuyh.sprintnba.ui.adapter.VPGameDetailAdapter;
 import com.yuyh.sprintnba.ui.presenter.impl.MatchDetailPresenter;
 import com.yuyh.sprintnba.ui.view.MatchDetailView;

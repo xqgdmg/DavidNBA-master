@@ -6,7 +6,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.match.MatchStat;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.library.utils.DimenUtils;
 import com.zengcanxiang.baseAdapter.absListView.HelperAdapter;
 import com.zengcanxiang.baseAdapter.absListView.HelperViewHolder;

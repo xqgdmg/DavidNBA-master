@@ -10,7 +10,7 @@ import com.cjj.MaterialRefreshLayout;
 import com.cjj.MaterialRefreshListener;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
-import com.yuyh.sprintnba.http.bean.forum.ForumsData;
+import com.yuyh.sprintnba.retrofit.bean.forum.ForumsData;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.support.SpaceItemDecoration;
 import com.yuyh.sprintnba.support.SupportRecyclerView;

@@ -7,7 +7,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
 import android.os.Looper;
 
-import com.yuyh.sprintnba.http.bean.bmob.AppCrashMessage;
+import com.yuyh.sprintnba.retrofit.bean.bmob.AppCrashMessage;
 import com.yuyh.library.utils.log.LogUtils;
 import com.yuyh.library.utils.toast.ToastUtils;
 

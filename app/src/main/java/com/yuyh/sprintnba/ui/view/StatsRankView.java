@@ -1,6 +1,6 @@
 package com.yuyh.sprintnba.ui.view;
 
-import com.yuyh.sprintnba.http.bean.player.StatsRank;
+import com.yuyh.sprintnba.retrofit.bean.player.StatsRank;
 import com.yuyh.sprintnba.app.Constant;
 import com.yuyh.sprintnba.ui.view.base.BaseView;
 

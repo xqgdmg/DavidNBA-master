@@ -1,6 +1,6 @@
 package com.yuyh.sprintnba.ui.view;
 
-import com.yuyh.sprintnba.http.bean.match.MatchCalendar;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchCalendar;
 
 /**
  * @author yuyh.

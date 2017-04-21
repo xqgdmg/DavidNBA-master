@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.match.MatchStat;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.sprintnba.utils.FrescoUtils;
 import com.zengcanxiang.baseAdapter.absListView.HelperAdapter;
 import com.zengcanxiang.baseAdapter.absListView.HelperViewHolder;

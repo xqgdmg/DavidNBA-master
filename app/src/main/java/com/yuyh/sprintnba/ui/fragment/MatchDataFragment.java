@@ -13,7 +13,7 @@ import com.yuyh.library.utils.toast.ToastUtils;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.RefreshEvent;
-import com.yuyh.sprintnba.http.bean.match.MatchStat;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.sprintnba.ui.adapter.MatchStatisticsAdapter;
 import com.yuyh.sprintnba.ui.presenter.impl.MatchDataPresenter;
 import com.yuyh.sprintnba.ui.view.MatchDataView;

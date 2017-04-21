@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.yuyh.library.view.list.indexablelistview.IndexableAdapter;
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.player.Players;
+import com.yuyh.sprintnba.retrofit.bean.player.Players;
 import com.yuyh.sprintnba.utils.FrescoUtils;
 
 

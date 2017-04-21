@@ -22,7 +22,7 @@ import com.yuyh.library.utils.toast.ToastUtils;
 import com.yuyh.sprintnba.app.Constant;
 import com.yuyh.sprintnba.base.BaseAppManager;
 import com.yuyh.sprintnba.base.BaseWebActivity;
-import com.yuyh.sprintnba.http.utils.RequestHelper;
+import com.yuyh.sprintnba.retrofit.utils.RequestHelper;
 import com.yuyh.sprintnba.ui.ImagePreViewActivity;
 import com.yuyh.sprintnba.ui.LoginActivity;
 import com.yuyh.sprintnba.ui.PostActivity;

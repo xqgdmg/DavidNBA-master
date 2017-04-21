@@ -4,9 +4,9 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.yuyh.library.utils.toast.ToastUtils;
-import com.yuyh.sprintnba.http.api.RequestCallback;
-import com.yuyh.sprintnba.http.api.hupu.forum.HupuForumService;
-import com.yuyh.sprintnba.http.bean.forum.ThreadsSchemaInfoData;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.api.hupu.forum.HupuForumService;
+import com.yuyh.sprintnba.retrofit.bean.forum.ThreadsSchemaInfoData;
 import com.yuyh.sprintnba.ui.presenter.Presenter;
 import com.yuyh.sprintnba.ui.view.ThreadDetailView;
 import com.yuyh.sprintnba.utils.ShareUtils;

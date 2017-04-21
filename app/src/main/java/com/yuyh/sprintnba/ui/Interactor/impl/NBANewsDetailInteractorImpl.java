@@ -1,9 +1,9 @@
 package com.yuyh.sprintnba.ui.Interactor.impl;
 
 import com.yuyh.sprintnba.ui.Interactor.NBANewsDetailInteractor;
-import com.yuyh.sprintnba.http.api.tencent.TencentService;
-import com.yuyh.sprintnba.http.bean.news.NewsDetail;
-import com.yuyh.sprintnba.http.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.api.tencent.TencentService;
+import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 import com.yuyh.sprintnba.app.Constant;
 
 /**

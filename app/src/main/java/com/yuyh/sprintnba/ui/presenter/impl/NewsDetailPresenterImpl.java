@@ -5,8 +5,8 @@ import android.support.annotation.NonNull;
 
 import com.yuyh.sprintnba.ui.Interactor.NBANewsDetailInteractor;
 import com.yuyh.sprintnba.ui.Interactor.impl.NBANewsDetailInteractorImpl;
-import com.yuyh.sprintnba.http.bean.news.NewsDetail;
-import com.yuyh.sprintnba.http.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 import com.yuyh.sprintnba.ui.presenter.NewsDetailPresenter;
 import com.yuyh.sprintnba.ui.view.NewsDetailView;
 

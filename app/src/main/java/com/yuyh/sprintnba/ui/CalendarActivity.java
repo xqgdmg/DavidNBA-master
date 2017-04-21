@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.yuyh.library.utils.log.LogUtils;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
-import com.yuyh.sprintnba.http.bean.match.MatchCalendar;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchCalendar;
 import com.yuyh.sprintnba.ui.presenter.impl.CalendarPagePresenter;
 import com.yuyh.sprintnba.ui.view.CalendarPageView;
 import com.yuyh.sprintnba.widget.calendar.CalConstant;

@@ -8,7 +8,7 @@ import android.widget.ListView;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.base.BaseWebActivity;
-import com.yuyh.sprintnba.http.bean.player.Teams;
+import com.yuyh.sprintnba.retrofit.bean.player.Teams;
 import com.yuyh.sprintnba.ui.presenter.Presenter;
 import com.yuyh.sprintnba.ui.presenter.impl.TeamsListPresenterImpl;
 import com.yuyh.sprintnba.support.OnListItemClickListener;

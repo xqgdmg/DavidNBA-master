@@ -29,6 +29,9 @@ public class NBAApplication extends Application {
         initFresco();
     }
 
+    /*
+     * 初始化 Fresco
+     */
     private void initFresco() {
         ImagePipelineConfig config = ImagePipelineConfig.newBuilder(this)
                 .setProgressiveJpegConfig(new SimpleProgressiveJpegConfig())

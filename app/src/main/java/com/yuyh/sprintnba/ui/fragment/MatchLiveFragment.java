@@ -11,7 +11,7 @@ import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.RefreshCompleteEvent;
 import com.yuyh.sprintnba.event.RefreshEvent;
-import com.yuyh.sprintnba.http.bean.match.LiveDetail;
+import com.yuyh.sprintnba.retrofit.bean.match.LiveDetail;
 import com.yuyh.sprintnba.support.OnLvScrollListener;
 import com.yuyh.sprintnba.ui.adapter.MatchLiveAdapter;
 import com.yuyh.sprintnba.ui.presenter.impl.MatchLivePresenter;

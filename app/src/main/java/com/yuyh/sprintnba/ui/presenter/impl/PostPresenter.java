@@ -3,12 +3,12 @@ package com.yuyh.sprintnba.ui.presenter.impl;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.yuyh.sprintnba.http.api.RequestCallback;
-import com.yuyh.sprintnba.http.api.hupu.forum.HupuForumService;
-import com.yuyh.sprintnba.http.bean.base.BaseData;
-import com.yuyh.sprintnba.http.bean.bmob.Feedback;
-import com.yuyh.sprintnba.http.bean.forum.AddReplyData;
-import com.yuyh.sprintnba.http.bean.forum.PermissionData;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.api.hupu.forum.HupuForumService;
+import com.yuyh.sprintnba.retrofit.bean.base.BaseData;
+import com.yuyh.sprintnba.retrofit.bean.bmob.Feedback;
+import com.yuyh.sprintnba.retrofit.bean.forum.AddReplyData;
+import com.yuyh.sprintnba.retrofit.bean.forum.PermissionData;
 import com.yuyh.sprintnba.app.Constant;
 import com.yuyh.sprintnba.ui.view.PostView;
 import com.yuyh.library.utils.log.LogUtils;

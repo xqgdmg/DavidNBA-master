@@ -5,7 +5,7 @@ import android.view.View;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.forum.ForumsData;
+import com.yuyh.sprintnba.retrofit.bean.forum.ForumsData;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.utils.FrescoUtils;
 import com.yuyh.sprintnba.utils.ItemAnimHelper;

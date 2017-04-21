@@ -15,7 +15,7 @@ import com.yuyh.library.utils.log.LogUtils;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.base.BaseWebActivity;
-import com.yuyh.sprintnba.http.bean.player.TeamsRank;
+import com.yuyh.sprintnba.retrofit.bean.player.TeamsRank;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.support.SpaceItemDecoration;
 import com.yuyh.sprintnba.support.SupportRecyclerView;

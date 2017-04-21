@@ -2,9 +2,9 @@ package com.yuyh.sprintnba.ui.presenter.impl;
 
 import android.content.Context;
 
-import com.yuyh.sprintnba.http.api.RequestCallback;
-import com.yuyh.sprintnba.http.api.tencent.TencentService;
-import com.yuyh.sprintnba.http.bean.match.MatchCalendar;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.api.tencent.TencentService;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchCalendar;
 import com.yuyh.sprintnba.ui.presenter.Presenter;
 import com.yuyh.sprintnba.ui.view.CalendarPageView;
 

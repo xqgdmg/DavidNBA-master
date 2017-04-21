@@ -7,7 +7,7 @@ import android.view.ViewTreeObserver;
 import android.widget.RelativeLayout;
 
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.match.LiveDetail;
+import com.yuyh.sprintnba.retrofit.bean.match.LiveDetail;
 import com.zengcanxiang.baseAdapter.absListView.HelperAdapter;
 import com.zengcanxiang.baseAdapter.absListView.HelperViewHolder;
 

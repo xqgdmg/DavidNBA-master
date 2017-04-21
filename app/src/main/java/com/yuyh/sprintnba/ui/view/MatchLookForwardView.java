@@ -1,6 +1,6 @@
 package com.yuyh.sprintnba.ui.view;
 
-import com.yuyh.sprintnba.http.bean.match.MatchStat;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 
 import java.util.List;
 

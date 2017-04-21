@@ -6,8 +6,8 @@ import android.support.annotation.NonNull;
 
 import com.yuyh.sprintnba.ui.Interactor.PlayersListInteractor;
 import com.yuyh.sprintnba.ui.Interactor.impl.PlayersListListInteractorImpl;
-import com.yuyh.sprintnba.http.bean.player.Players;
-import com.yuyh.sprintnba.http.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.bean.player.Players;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 import com.yuyh.sprintnba.ui.presenter.Presenter;
 import com.yuyh.sprintnba.ui.view.PlayersView;
 

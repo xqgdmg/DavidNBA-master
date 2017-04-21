@@ -13,7 +13,7 @@ import com.yuyh.library.utils.DimenUtils;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.base.BaseWebActivity;
-import com.yuyh.sprintnba.http.bean.player.StatsRank;
+import com.yuyh.sprintnba.retrofit.bean.player.StatsRank;
 import com.yuyh.sprintnba.app.Constant;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.support.SpaceItemDecoration;

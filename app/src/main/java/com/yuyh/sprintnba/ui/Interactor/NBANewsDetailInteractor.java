@@ -1,8 +1,8 @@
 
 package com.yuyh.sprintnba.ui.Interactor;
 
-import com.yuyh.sprintnba.http.bean.news.NewsDetail;
-import com.yuyh.sprintnba.http.api.RequestCallback;
+import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
+import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 
 public interface NBANewsDetailInteractor {
 

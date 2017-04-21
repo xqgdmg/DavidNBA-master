@@ -5,7 +5,7 @@ import android.view.View;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.player.TeamsRank;
+import com.yuyh.sprintnba.retrofit.bean.player.TeamsRank;
 import com.yuyh.sprintnba.support.NoDoubleClickListener;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.utils.FrescoUtils;

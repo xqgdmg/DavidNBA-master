@@ -23,7 +23,7 @@ import com.yuyh.library.utils.toast.ToastUtils;
 import com.yuyh.library.view.common.Info;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
-import com.yuyh.sprintnba.http.bean.news.NewsDetail;
+import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
 import com.yuyh.sprintnba.ui.presenter.NewsDetailPresenter;
 import com.yuyh.sprintnba.ui.presenter.impl.NewsDetailPresenterImpl;
 import com.yuyh.sprintnba.ui.view.NewsDetailView;

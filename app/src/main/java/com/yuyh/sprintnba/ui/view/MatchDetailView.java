@@ -1,6 +1,6 @@
 package com.yuyh.sprintnba.ui.view;
 
-import com.yuyh.sprintnba.http.bean.match.MatchBaseInfo;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchBaseInfo;
 import com.yuyh.sprintnba.ui.view.base.BaseView;
 
 /**

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.http.bean.forum.ThreadListData;
+import com.yuyh.sprintnba.retrofit.bean.forum.ThreadListData;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.utils.ItemAnimHelper;
 import com.zengcanxiang.baseAdapter.recyclerView.HelperAdapter;

@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.RefreshEvent;
-import com.yuyh.sprintnba.http.bean.match.MatchStat;
+import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.sprintnba.ui.adapter.MatchHistoryAdapter;
 import com.yuyh.sprintnba.ui.adapter.MatchLMaxPlayerdapter;
 import com.yuyh.sprintnba.ui.adapter.MatchRecentAdapter;

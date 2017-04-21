@@ -1,6 +1,6 @@
 package com.yuyh.sprintnba.ui.view;
 
-import com.yuyh.sprintnba.http.bean.news.NewsDetail;
+import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
 
 public interface NewsDetailView {
 

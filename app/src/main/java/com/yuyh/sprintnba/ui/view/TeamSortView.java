@@ -1,6 +1,6 @@
 package com.yuyh.sprintnba.ui.view;
 
-import com.yuyh.sprintnba.http.bean.player.TeamsRank;
+import com.yuyh.sprintnba.retrofit.bean.player.TeamsRank;
 import com.yuyh.sprintnba.ui.view.base.BaseView;
 
 import java.util.List;
