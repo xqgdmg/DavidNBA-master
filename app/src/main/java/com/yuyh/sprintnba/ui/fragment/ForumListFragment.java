@@ -28,8 +28,6 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
- * @author yuyh.
- * @date 16/6/5.
  */
 public class ForumListFragment extends BaseLazyFragment implements ForumListView {
 
@@ -51,11 +49,15 @@ public class ForumListFragment extends BaseLazyFragment implements ForumListView
         setContentView(R.layout.fragment_normal_recyclerview);
         ButterKnife.inject(this, getContentView());
         initView();
+
+         // View 中只需要 presenter
         presenter = new ForumListPresenterImpl(mActivity, this);
         presenter.initialized();
     }
 
     private void initView() {
+
+         // adapter 设置两个 layout
         adapter = new ForumListAdapter(list, mActivity, R.layout.item_list_teams, R.layout.item_fragment_forum_title);
         adapter.setOnListItemClickListener(new OnListItemClickListener<ForumsData.Forum>() {
             @Override
@@ -84,7 +86,7 @@ public class ForumListFragment extends BaseLazyFragment implements ForumListView
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-            mActivity.invalidateOptionsMenu();
+            mActivity.invalidateOptionsMenu(); // 重新绘制 OptionsMenu
         }
     }
 

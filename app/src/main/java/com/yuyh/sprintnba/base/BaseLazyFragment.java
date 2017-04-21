@@ -54,13 +54,16 @@ public class BaseLazyFragment extends BaseFragment {
 		}
 	}
 
+	/*
+	 * 生命周期的重新设置
+	 */
 	@Override
 	public void setUserVisibleHint(boolean isVisibleToUser) {
 		super.setUserVisibleHint(isVisibleToUser);
 		if (isVisibleToUser && !isInit && getContentView() != null) {
 			isInit = true;
 			onCreateViewLazy(savedInstanceState);
-			onResumeLazy();
+			onResumeLazy(); // 只调用父类的方法
 		}
 		if (isInit && getContentView() != null) {
 			if (isVisibleToUser) {

@@ -1,5 +1,8 @@
 package com.yuyh.sprintnba.ui.view.base;
 
+/*
+ * 加载中，加载完成，加载错误
+ */
 public interface BaseView {
 
     /**
