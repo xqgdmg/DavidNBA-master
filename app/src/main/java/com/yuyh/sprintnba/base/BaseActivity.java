@@ -42,7 +42,7 @@ import butterknife.ButterKnife;
 * 1.dialog 2.跳转 3.status bar
 *
 */
-public abstract class BaseAppCompatActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * Screen information
@@ -236,6 +236,8 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
             mLoadingDialog = LoadingDialog.createDialog(this);
             mLoadingDialog.setTitle(null);
             mLoadingDialog.setCancelable(false);
+
+             // setOnKeyListener 是加载中可以取消
             mLoadingDialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
                 @Override
                 public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {

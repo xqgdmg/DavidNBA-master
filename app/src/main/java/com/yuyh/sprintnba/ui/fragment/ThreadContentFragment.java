@@ -7,7 +7,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.base.BaseAppCompatActivity;
+import com.yuyh.sprintnba.base.BaseActivity;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.ThreadContentEvent;
 import com.yuyh.sprintnba.view.HuPuWebView;
@@ -51,7 +51,7 @@ public class ThreadContentFragment extends BaseLazyFragment implements HuPuWebVi
         hupuWebView.setCallBack(this);
         hupuWebView.setOnScrollChangedCallback(this);
         EventBus.getDefault().register(this);
-        mToolbar = ((BaseAppCompatActivity) mActivity).getToolbar();
+        mToolbar = ((BaseActivity) mActivity).getToolbar();
     }
 
     @Override

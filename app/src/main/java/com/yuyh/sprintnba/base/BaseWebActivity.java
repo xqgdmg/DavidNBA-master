@@ -10,6 +10,10 @@ import com.yuyh.library.utils.toast.ToastUtils;
 
 import butterknife.ButterKnife;
 
+/*
+ * 一个头部 toolbar
+ * 一个 BrowserLayout（webview 在这里面 new 出来的）
+ */
 public class BaseWebActivity extends BaseSwipeBackCompatActivity {
 
     public static final String BUNDLE_KEY_URL = "BUNDLE_KEY_URL";

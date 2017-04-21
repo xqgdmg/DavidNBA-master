@@ -25,7 +25,7 @@ import com.yuyh.library.utils.toast.ToastUtils;
 import com.yuyh.library.view.viewpager.XViewPager;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.app.Constant;
-import com.yuyh.sprintnba.base.BaseAppCompatActivity;
+import com.yuyh.sprintnba.base.BaseActivity;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.CalendarEvent;
 import com.yuyh.sprintnba.ui.adapter.VPHomeAdapter;
@@ -47,7 +47,7 @@ import cn.bmob.v3.update.BmobUpdateAgent;
 /*
 * 主页面
 */
-public class HomeActivity extends BaseAppCompatActivity implements HomeView {
+public class HomeActivity extends BaseActivity implements HomeView {
 
     @InjectView(R.id.home_container)
     XViewPager mViewPager;

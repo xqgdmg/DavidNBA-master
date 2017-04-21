@@ -10,7 +10,7 @@ import com.yuyh.sprintnba.R;
 * 有用吗？
 * SwipeBackHelper 不到 1k 的星
 */
-public abstract class BaseSwipeBackCompatActivity extends BaseAppCompatActivity {
+public abstract class BaseSwipeBackCompatActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
