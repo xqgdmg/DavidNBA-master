@@ -26,7 +26,7 @@ import cn.bmob.v3.listener.SaveListener;
 
 /**
  * UncaughtException处理类,当程序发生Uncaught异常的时候,有该类来接管程序,并记录发送错误报告.
- * <p/>
+ * 只需要在 Application 中初始化
  * Created by yuyuhang on 15/12/7.
  */
 public class CrashHandler implements UncaughtExceptionHandler {
