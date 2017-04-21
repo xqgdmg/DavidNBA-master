@@ -16,6 +16,9 @@ import com.yuyh.sprintnba.ui.fragment.OtherFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * 这个是什么东东
+ */
 public class HomeInteractorImpl implements HomeInteractor {
 
     @Override
@@ -31,6 +34,9 @@ public class HomeInteractorImpl implements HomeInteractor {
         return fragments;
     }
 
+    /*
+     * 获取导航栏的条目
+     */
     @Override
     public List<NavigationEntity> getNavigationList(Context context) {
         List<NavigationEntity> navigationEntities = new ArrayList<NavigationEntity>() {{

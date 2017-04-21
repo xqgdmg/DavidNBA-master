@@ -74,6 +74,8 @@ public class ForumListFragment extends BaseLazyFragment implements ForumListView
         recyclerView.addItemDecoration(new SpaceItemDecoration(DimenUtils.dpToPxInt(2)));
         recyclerView.setHasFixedSize(true);
         materialRefreshLayout.setLoadMore(false);
+
+
         materialRefreshLayout.setMaterialRefreshListener(new MaterialRefreshListener() {
             @Override
             public void onRefresh(MaterialRefreshLayout materialRefreshLayout) {
