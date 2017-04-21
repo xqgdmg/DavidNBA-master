@@ -1,4 +1,4 @@
-package com.yuyh.sprintnba.widget.calendar;
+package com.yuyh.sprintnba.view.calendar;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -20,8 +20,8 @@ import com.yuyh.sprintnba.ui.adapter.VPGameDetailAdapter;
 import com.yuyh.sprintnba.ui.presenter.impl.MatchDetailPresenter;
 import com.yuyh.sprintnba.ui.view.MatchDetailView;
 import com.yuyh.sprintnba.utils.FrescoUtils;
-import com.yuyh.sprintnba.widget.GameDetailScrollBar;
-import com.yuyh.sprintnba.widget.StickyNavLayout;
+import com.yuyh.sprintnba.view.GameDetailScrollBar;
+import com.yuyh.sprintnba.view.StickyNavLayout;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

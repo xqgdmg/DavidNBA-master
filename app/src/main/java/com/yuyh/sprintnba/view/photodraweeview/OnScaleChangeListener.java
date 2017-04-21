@@ -1,4 +1,4 @@
-package com.yuyh.sprintnba.widget.photodraweeview;
+package com.yuyh.sprintnba.view.photodraweeview;
 
 /**
  * Interface definition for callback to be invoked when attached ImageView scale changes

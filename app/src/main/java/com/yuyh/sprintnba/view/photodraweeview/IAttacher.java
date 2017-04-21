@@ -1,4 +1,4 @@
-package com.yuyh.sprintnba.widget.photodraweeview;
+package com.yuyh.sprintnba.view.photodraweeview;
 
 import android.view.GestureDetector;
 import android.view.View;

@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.yuyh.sprintnba.widget.StickyNavLayout
+        <com.yuyh.sprintnba.view.StickyNavLayout
             android:id="@+id/stickyNavLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -175,7 +175,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/white" />
-        </com.yuyh.sprintnba.widget.StickyNavLayout>
+        </com.yuyh.sprintnba.view.StickyNavLayout>
     </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

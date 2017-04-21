@@ -11,9 +11,9 @@ import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.retrofit.bean.match.MatchCalendar;
 import com.yuyh.sprintnba.ui.presenter.impl.CalendarPagePresenter;
 import com.yuyh.sprintnba.ui.view.CalendarPageView;
-import com.yuyh.sprintnba.widget.calendar.CalConstant;
-import com.yuyh.sprintnba.widget.calendar.CalendarView;
-import com.yuyh.sprintnba.widget.calendar.ICalendarView;
+import com.yuyh.sprintnba.view.calendar.CalConstant;
+import com.yuyh.sprintnba.view.calendar.CalendarView;
+import com.yuyh.sprintnba.view.calendar.ICalendarView;
 
 import java.lang.reflect.Field;
 import java.util.Calendar;

@@ -14,7 +14,7 @@ import com.yuyh.sprintnba.app.Constant;
 import com.yuyh.sprintnba.ui.presenter.impl.ThreadDetailPresenterImpl;
 import com.yuyh.sprintnba.ui.adapter.VPThreadAdapter;
 import com.yuyh.sprintnba.ui.view.ThreadDetailView;
-import com.yuyh.sprintnba.widget.VerticalViewPager;
+import com.yuyh.sprintnba.view.VerticalViewPager;
 import com.yuyh.library.utils.toast.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;

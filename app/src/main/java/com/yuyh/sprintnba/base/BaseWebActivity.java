@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.widget.BrowserLayout;
+import com.yuyh.sprintnba.view.BrowserLayout;
 import com.yuyh.library.utils.toast.ToastUtils;
 
 import butterknife.ButterKnife;

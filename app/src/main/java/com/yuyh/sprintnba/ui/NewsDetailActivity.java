@@ -28,7 +28,7 @@ import com.yuyh.sprintnba.ui.presenter.NewsDetailPresenter;
 import com.yuyh.sprintnba.ui.presenter.impl.NewsDetailPresenterImpl;
 import com.yuyh.sprintnba.ui.view.NewsDetailView;
 import com.yuyh.sprintnba.utils.ImageUtils;
-import com.yuyh.sprintnba.widget.PhotoView;
+import com.yuyh.sprintnba.view.PhotoView;
 
 import java.util.List;
 import java.util.Map;

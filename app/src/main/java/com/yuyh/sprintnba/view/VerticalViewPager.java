@@ -1,4 +1,4 @@
-package com.yuyh.sprintnba.widget;
+package com.yuyh.sprintnba.view;
 
 import android.content.Context;
 import android.content.res.Resources;

@@ -10,7 +10,7 @@ import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseAppCompatActivity;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.ThreadContentEvent;
-import com.yuyh.sprintnba.widget.HuPuWebView;
+import com.yuyh.sprintnba.view.HuPuWebView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

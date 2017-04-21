@@ -47,7 +47,7 @@
 
     </RelativeLayout>
 
-    <com.yuyh.sprintnba.widget.calendar.CalendarView
+    <com.yuyh.sprintnba.view.calendar.CalendarView
         android:id="@+id/calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

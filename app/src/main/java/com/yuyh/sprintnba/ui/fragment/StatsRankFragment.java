@@ -21,7 +21,7 @@ import com.yuyh.sprintnba.support.SupportRecyclerView;
 import com.yuyh.sprintnba.ui.adapter.StatsRankAdapter;
 import com.yuyh.sprintnba.ui.presenter.impl.StatsRankPresenterImpl;
 import com.yuyh.sprintnba.ui.view.StatsRankView;
-import com.yuyh.sprintnba.widget.ToggleLayout;
+import com.yuyh.sprintnba.view.ToggleLayout;
 
 import java.util.ArrayList;
 import java.util.List;
