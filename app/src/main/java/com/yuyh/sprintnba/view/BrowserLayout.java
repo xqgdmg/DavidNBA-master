@@ -80,6 +80,7 @@ public class BrowserLayout extends LinearLayout {
 
         mWebView.setWebViewClient(new MonitorWebClient());
 
+         // 浏览器的下方的控制按键
         mBrowserControllerView = LayoutInflater.from(context).inflate(R.layout.browser_controller, null);
         mGoBackBtn = (ImageButton) mBrowserControllerView.findViewById(R.id.browser_controller_back);
         mGoForwardBtn = (ImageButton) mBrowserControllerView.findViewById(R.id.browser_controller_forward);

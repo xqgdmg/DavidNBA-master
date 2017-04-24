@@ -39,7 +39,12 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
 
     protected void init(AttributeSet attrs, int defStyle) {
         if (isInEditMode()) return;
+         // 重合的问题，默认值是 true； Sets whether this ViewGroup will clip its children to its padding and resize
         setClipToPadding(false);
+         // If this view doesn't do any drawing on its own
+         // ViewGroup 默认不会绘制自己，如果我们想要重写onDraw，就要调用setWillNotDraw（false），有两种方法：
+//        1，构造函数中，给viewgroup设置一个颜色。
+//        2，构造函数中，调用setWillNotDraw（false），去掉其WILL_NOT_DRAW flag。
         setWillNotDraw(false);
     }
 
@@ -50,7 +55,7 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
     public void setWaveColor(int waveColor) {
         this.waveColor = waveColor;
         if (null != materialWaveView) {
-            materialWaveView.setColor(this.waveColor);
+            materialWaveView.setColor(this.waveColor); // 设置颜色
         }
     }
 
@@ -120,7 +125,7 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        density = getContext().getResources().getDisplayMetrics().density;
+        density = getContext().getResources().getDisplayMetrics().density; // 获取手机的 屏幕的密度
         materialWaveView = new MaterialWaveView(getContext());
         materialWaveView.setColor(waveColor);
         addView(materialWaveView);
@@ -148,6 +153,8 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
         }
         if (circleProgressBar != null) {
             circleProgressBar.onComplete(materialRefreshLayout);
+             // ViewCompat 提供 api4 向后兼容的功能
+             // 比如ViewCompat里面会有setElevation、setTranslateZ这种方法，这些View的方法是Android 5.0才引入的，如果在老版本调用会崩溃。使用ViewCompat就可以不用考虑太多，在低版本系统时会忽略。
             ViewCompat.setTranslationY(circleProgressBar, 0);
             ViewCompat.setScaleX(circleProgressBar, 0);
             ViewCompat.setScaleY(circleProgressBar, 0);

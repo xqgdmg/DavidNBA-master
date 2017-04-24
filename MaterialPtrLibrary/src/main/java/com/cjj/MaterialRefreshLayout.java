@@ -17,6 +17,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.AbsListView;
 import android.widget.FrameLayout;
 
+/*
+ * 自定义的刷新控件
+ */
 public class MaterialRefreshLayout extends FrameLayout {
 
     public static final String Tag = MaterialRefreshLayout.class.getSimpleName();
@@ -73,6 +76,7 @@ public class MaterialRefreshLayout extends FrameLayout {
     }
 
     private void init(Context context, AttributeSet attrs, int defstyleAttr) {
+         // View 中自带的方法 指示此视图当前是否处于编辑模式。在开发者工具中显示时，视图通常为*编辑模式。例如，如果*此视图由可视化用户界面构建器绘制，则此方法*应返回true。
         if (isInEditMode()) {
             return;
         }
@@ -81,6 +85,7 @@ public class MaterialRefreshLayout extends FrameLayout {
             throw new RuntimeException("can only have one child widget");
         }
 
+         // 减速加速器
         decelerateInterpolator = new DecelerateInterpolator(10);
 
 
