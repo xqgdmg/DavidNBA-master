@@ -148,13 +148,13 @@ public class BrowserLayout extends LinearLayout {
 
     public void goBack() {
         if (null != mWebView) {
-            mWebView.goBack();
+            mWebView.goBack(); // WebView 有方法
         }
     }
 
     public void goForward() {
         if (null != mWebView) {
-            mWebView.goForward();
+            mWebView.goForward();// WebView 有方法
         }
     }
 
@@ -170,6 +170,9 @@ public class BrowserLayout extends LinearLayout {
         mBrowserControllerView.setVisibility(View.VISIBLE);
     }
 
+    /*
+     * setWebClient帮助WebView处理各种通知、请求事件
+     */
     private class MonitorWebClient extends WebViewClient {
 
         @Override
@@ -213,9 +216,13 @@ public class BrowserLayout extends LinearLayout {
         }
     }
 
+    /*
+     * setWebChromeClient辅助WebView处理JavaScript的对话框，网站图标，网站title，加载进度等
+     */
     private class AppCacheWebChromeClient extends WebChromeClient {
         @Override
         public void onReachedMaxAppCacheSize(long spaceNeeded, long totalUsedQuota, WebStorage.QuotaUpdater quotaUpdater) {
+             // 当到达了app的最大缓存，为JavaScript存储API提供新的配额。
             //    Log.e(APP_CACHE, "onReachedMaxAppCacheSize reached, increasing space: " + spaceNeeded);
             quotaUpdater.updateQuota(spaceNeeded * 2);
         }

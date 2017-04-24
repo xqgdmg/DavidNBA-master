@@ -37,7 +37,7 @@ public class OkHttpHelper {
                 .connectTimeout(20 * 1000, TimeUnit.MILLISECONDS)
                 .readTimeout(20 * 1000, TimeUnit.MILLISECONDS)
                 .addInterceptor(mCookieInterceptor)
-                .addInterceptor(logging);
+                .addInterceptor(logging); // log
         return builder.build();
     }
 
