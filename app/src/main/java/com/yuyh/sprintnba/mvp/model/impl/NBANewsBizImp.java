@@ -2,6 +2,9 @@ package com.yuyh.sprintnba.mvp.model.impl;
 
 import com.yuyh.sprintnba.mvp.model.NBANewsBiz;
 
+/*
+ * 逻辑只有标题的内容
+ */
 public class NBANewsBizImp implements NBANewsBiz {
 
     @Override

@@ -17,7 +17,7 @@ import com.yuyh.library.view.viewpager.indicator.FragmentListPageAdapter;
 import com.yuyh.library.view.viewpager.indicator.IndicatorViewPager;
 
 /**
- * Created by Kyrie.Y on 2016/6/6.
+ * 活动标题的 adapter
  */
 public class VPNewsAdapter extends IndicatorViewPager.IndicatorFragmentPagerAdapter {
     private LayoutInflater inflate;

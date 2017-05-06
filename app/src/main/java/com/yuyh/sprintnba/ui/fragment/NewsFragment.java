@@ -20,8 +20,7 @@ import com.yuyh.library.view.viewpager.indicator.transition.OnTransitionTextList
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 
 /**
- * @author yuyh.
- * @date 16/6/5.
+ * Fragment 嵌套 Fragment（ViewPager）
  */
 public class NewsFragment extends BaseLazyFragment implements NewsView {
 
@@ -35,6 +34,7 @@ public class NewsFragment extends BaseLazyFragment implements NewsView {
         setContentView(R.layout.fragment_nba_news);
         
         Presenter presenter = new NBANewsPresenterImpl(mActivity, this);
+
         presenter.initialized();
     }
 
@@ -68,13 +68,13 @@ public class NewsFragment extends BaseLazyFragment implements NewsView {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-            mActivity.invalidateOptionsMenu();
+            mActivity.invalidateOptionsMenu(); // 重新绘制 OptionsMenu
         }
     }
 
     @Override
     protected void onPauseLazy() {
         super.onPauseLazy();
-        JCVideoPlayer.releaseAllVideos();
+        JCVideoPlayer.releaseAllVideos(); // 节操视频播放器
     }
 }

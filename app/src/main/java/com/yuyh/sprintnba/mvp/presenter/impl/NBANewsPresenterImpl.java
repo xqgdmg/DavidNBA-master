@@ -16,16 +16,16 @@ public class NBANewsPresenterImpl implements Presenter {
 
     private Context mContext = null;
     private NewsView mNewsView = null;
-    private NBANewsBiz mNewsInteractor = null;
+    private NBANewsBiz nbaNewsBiz = null;
 
     public NBANewsPresenterImpl(Context context, @NonNull NewsView newsView) {
         mContext = context;
         mNewsView = newsView;
-        mNewsInteractor = new NBANewsBizImp();
+        nbaNewsBiz = new NBANewsBizImp();
     }
 
     @Override
     public void initialized() {
-        mNewsView.initializeViews(mNewsInteractor.getTabs());
+        mNewsView.initializeViews(nbaNewsBiz.getTabs()); // 实际上是调用的 NBANewsBizImp 的方法，返回具体的标题内容
     }
 }
