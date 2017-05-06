@@ -11,7 +11,7 @@ import java.util.List;
 /*
  * 首页逻辑
  */
-public interface HomeInteractor {
+public interface HomeBiz {
 
     List<BaseLazyFragment> getPagerFragments();
 

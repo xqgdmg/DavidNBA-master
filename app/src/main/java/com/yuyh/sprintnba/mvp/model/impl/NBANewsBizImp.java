@@ -1,8 +1,8 @@
 package com.yuyh.sprintnba.mvp.model.impl;
 
-import com.yuyh.sprintnba.mvp.model.NBANewsInteractor;
+import com.yuyh.sprintnba.mvp.model.NBANewsBiz;
 
-public class NBANewsInteractorImpl implements NBANewsInteractor {
+public class NBANewsBizImp implements NBANewsBiz {
 
     @Override
     public String[] getTabs() {

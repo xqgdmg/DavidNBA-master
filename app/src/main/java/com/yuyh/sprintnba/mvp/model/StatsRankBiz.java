@@ -5,7 +5,7 @@ import com.yuyh.sprintnba.app.Constant;
 
 import java.util.Map;
 
-public interface StatsRankInteractor {
+public interface StatsRankBiz {
 
     Map<String, Constant.TabType> getTabs();
 

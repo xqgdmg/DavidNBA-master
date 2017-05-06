@@ -2,7 +2,7 @@ package com.yuyh.sprintnba.mvp.model.impl;
 
 import android.content.Context;
 
-import com.yuyh.sprintnba.mvp.model.HomeInteractor;
+import com.yuyh.sprintnba.mvp.model.HomeBiz;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.utils.NavigationEntity;
@@ -21,7 +21,7 @@ import java.util.List;
  * 1.获取 6个 fragment
  * 2.获取导航栏的条目
  */
-public class HomeInteractorImpl implements HomeInteractor {
+public class HomeBizImp implements HomeBiz {
 
     /*
      * 获取 6个 fragment

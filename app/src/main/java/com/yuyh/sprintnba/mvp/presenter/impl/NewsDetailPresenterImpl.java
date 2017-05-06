@@ -3,8 +3,8 @@ package com.yuyh.sprintnba.mvp.presenter.impl;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.yuyh.sprintnba.mvp.model.NBANewsDetailInteractor;
-import com.yuyh.sprintnba.mvp.model.impl.NBANewsDetailInteractorImpl;
+import com.yuyh.sprintnba.mvp.model.NBANewsDetailBiz;
+import com.yuyh.sprintnba.mvp.model.impl.NBANewsDetailBizImp;
 import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
 import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 import com.yuyh.sprintnba.mvp.presenter.NewsDetailPresenter;
@@ -18,13 +18,13 @@ public class NewsDetailPresenterImpl implements NewsDetailPresenter {
 
     private Context mContext = null;
     private NewsDetailView mNewsView = null;
-    private NBANewsDetailInteractor mNewsDetailInteractor = null;
+    private NBANewsDetailBiz mNewsDetailInteractor = null;
 
     public NewsDetailPresenterImpl(Context context, @NonNull NewsDetailView mNewsView) {
 
         mContext = context;
         this.mNewsView = mNewsView;
-        mNewsDetailInteractor = new NBANewsDetailInteractorImpl();
+        mNewsDetailInteractor = new NBANewsDetailBizImp();
     }
 
     @Override

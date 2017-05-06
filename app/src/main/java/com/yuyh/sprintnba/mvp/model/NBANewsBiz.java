@@ -1,7 +1,7 @@
 
 package com.yuyh.sprintnba.mvp.model;
 
-public interface NBANewsInteractor {
+public interface NBANewsBiz {
 
     String[] getTabs();
 }

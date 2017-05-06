@@ -6,8 +6,8 @@ import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 import com.yuyh.sprintnba.retrofit.api.tencent.TencentService;
 import com.yuyh.sprintnba.retrofit.bean.player.StatsRank;
 import com.yuyh.sprintnba.app.Constant;
-import com.yuyh.sprintnba.mvp.model.StatsRankInteractor;
-import com.yuyh.sprintnba.mvp.model.impl.StatsRankInteractorImpl;
+import com.yuyh.sprintnba.mvp.model.StatsRankBiz;
+import com.yuyh.sprintnba.mvp.model.impl.StatsRankBizImp;
 import com.yuyh.sprintnba.mvp.presenter.Presenter;
 import com.yuyh.sprintnba.mvp.view.StatsRankView;
 
@@ -21,12 +21,12 @@ public class StatsRankPresenterImpl implements Presenter {
 
     private Context context;
     private StatsRankView rankView;
-    private StatsRankInteractor interactor;
+    private StatsRankBiz interactor;
 
     public StatsRankPresenterImpl(Context context, StatsRankView rankView) {
         this.context = context;
         this.rankView = rankView;
-        interactor = new StatsRankInteractorImpl();
+        interactor = new StatsRankBizImp();
     }
 
 

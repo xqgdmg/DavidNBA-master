@@ -1,12 +1,12 @@
 package com.yuyh.sprintnba.mvp.model.impl;
 
-import com.yuyh.sprintnba.mvp.model.StatsRankInteractor;
+import com.yuyh.sprintnba.mvp.model.StatsRankBiz;
 import com.yuyh.sprintnba.app.Constant;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class StatsRankInteractorImpl implements StatsRankInteractor {
+public class StatsRankBizImp implements StatsRankBiz {
 
     @Override
     public Map<String, Constant.TabType> getTabs() {

@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.yuyh.sprintnba.mvp.model.PlayersListInteractor;
-import com.yuyh.sprintnba.mvp.model.impl.PlayersListListInteractorImpl;
+import com.yuyh.sprintnba.mvp.model.PlayersListBiz;
+import com.yuyh.sprintnba.mvp.model.impl.PlayersListListBizImp;
 import com.yuyh.sprintnba.retrofit.bean.player.Players;
 import com.yuyh.sprintnba.retrofit.api.RequestCallback;
 import com.yuyh.sprintnba.mvp.presenter.Presenter;
@@ -19,12 +19,12 @@ public class PlayersListPresenterImpl implements Presenter {
 
     private Context mContext = null;
     private PlayersView mPlayersView = null;
-    private PlayersListInteractor mPlayersListInteractor = null;
+    private PlayersListBiz mPlayersListBiz = null;
 
     public PlayersListPresenterImpl(Context context, @NonNull PlayersView PlayersView) {
         mContext = context;
         this.mPlayersView = PlayersView;
-        mPlayersListInteractor = new PlayersListListInteractorImpl();
+        mPlayersListBiz = new PlayersListListBizImp();
     }
 
     @Override
@@ -33,7 +33,7 @@ public class PlayersListPresenterImpl implements Presenter {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                mPlayersListInteractor.getAllPlayers(new RequestCallback<Players>() {
+                mPlayersListBiz.getAllPlayers(new RequestCallback<Players>() {
                     @Override
                     public void onSuccess(final Players Players) {
                         ((Activity) mContext).runOnUiThread(new Runnable() {
