@@ -33,8 +33,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
- * @author yuyh.
- * @date 16/6/5.
+ * 这个不是 MVP
  */
 public class ScheduleFragment extends BaseLazyFragment {
 
@@ -78,7 +77,7 @@ public class ScheduleFragment extends BaseLazyFragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new SpaceItemDecoration(DimenUtils.dpToPxInt(3)));
+        recyclerView.addItemDecoration(new SpaceItemDecoration(DimenUtils.dpToPxInt(3))); // 上下左右的间距
         materialRefreshLayout.setMaterialRefreshListener(new RefreshListener());
         materialRefreshLayout.setLoadMore(false);
     }

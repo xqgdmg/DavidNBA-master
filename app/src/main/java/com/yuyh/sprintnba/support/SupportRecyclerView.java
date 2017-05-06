@@ -10,6 +10,8 @@ import com.yuyh.library.utils.log.LogUtils;
 /**
  * 设置 emptyView
  * 设置 adapter
+ *
+ * 自定义 RecyclerView
  */
 public class SupportRecyclerView extends RecyclerView {
     private View emptyView;
@@ -48,7 +50,7 @@ public class SupportRecyclerView extends RecyclerView {
     }
 
     /*
-     * 设置适配器，为什么不是重写的方法,为什么要设置两次 adapter
+     * 设置适配器，先移除原来的 adapter 和 数据监听
      */
     public void setAdapter(Adapter adapter) {
         Adapter oldAdapter = getAdapter();

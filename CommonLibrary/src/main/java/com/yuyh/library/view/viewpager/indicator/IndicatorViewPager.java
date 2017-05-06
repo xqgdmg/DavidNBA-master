@@ -34,6 +34,7 @@ import com.yuyh.library.view.viewpager.viewpager.SViewPager;
  * @author试着飞
  * @date 2014年11月1日
  * @version 1.0 将indicatorView，ViewPager联合使用
+ * 厉害了，setAdapter 可以返回两个 adapter
  */
 public class IndicatorViewPager {
 	private Indicator indicatorView;

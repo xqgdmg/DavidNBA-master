@@ -18,6 +18,8 @@ import com.yuyh.library.view.viewpager.indicator.IndicatorViewPager;
 
 /**
  * 活动标题的 adapter
+ * 和 标题下面 VP的 adapter
+ * 厉害了，可以返回两个 adapter
  */
 public class VPNewsAdapter extends IndicatorViewPager.IndicatorFragmentPagerAdapter {
     private LayoutInflater inflate;

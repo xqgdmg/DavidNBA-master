@@ -9,8 +9,8 @@ import com.zengcanxiang.baseAdapter.interFace.DataHelper;
 import java.util.List;
 
 /**
- * 提供便捷操作的baseAdapter
- *
+ * 提供便捷操作的 baseAdapter
+ *  HelperViewHolder  recyclerView
  * @author zengcx
  */
 public abstract class HelperAdapter<T> extends BaseAdapter<T>

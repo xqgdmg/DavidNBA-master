@@ -28,6 +28,9 @@ public class NewsFragment extends BaseLazyFragment implements NewsView {
     private IndicatorViewPager indicatorViewPager;
     private ScrollIndicatorView scrollIndicatorView;
 
+    /*
+     * 主线流程
+     */
     @Override
     protected void onCreateViewLazy(Bundle savedInstanceState) {
         super.onCreateViewLazy(savedInstanceState);
@@ -38,6 +41,9 @@ public class NewsFragment extends BaseLazyFragment implements NewsView {
         presenter.initialized();
     }
 
+    /*
+     * 具体实现过程
+     */
     @Override
     public void initializeViews(String[] names) {
 
@@ -58,9 +64,12 @@ public class NewsFragment extends BaseLazyFragment implements NewsView {
         // 设置滚动监听
         scrollIndicatorView.setOnTransitionListener(new OnTransitionTextListener().setColor(getResources().getColor(R.color.colorPrimary), Color.WHITE));
 
+         // Fragment 里面的 ViewPager （除了滑动标题栏）
         ViewPager viewPager = (ViewPager) findViewById(R.id.nba_news_viewPager);
         viewPager.setOffscreenPageLimit(names.length);
         indicatorViewPager = new IndicatorViewPager(scrollIndicatorView, viewPager);
+
+        // 这不是普通的 setAdapter，同时设置了两个 adapter
         indicatorViewPager.setAdapter(new VPNewsAdapter(mActivity, names, getChildFragmentManager()));
     }
 
