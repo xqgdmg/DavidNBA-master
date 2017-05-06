@@ -72,8 +72,11 @@ public class HomeActivity extends BaseActivity implements HomeView {
     protected void initViewsAndEvents() {
         Presenter presenter = new HomePresenterImpl(this, this);
         presenter.initialized();
-        BmobUpdateAgent.setUpdateOnlyWifi(true); // Wifi下面才提示APP更新
+
+         // Bmob 设置
+        BmobUpdateAgent.setUpdateOnlyWifi(true);
         BmobUpdateAgent.update(this);
+
         // Android6.0 权限申请
         Acp.getInstance(this).request(new AcpOptions.Builder()
                         .setPermissions(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE)
@@ -142,7 +145,6 @@ public class HomeActivity extends BaseActivity implements HomeView {
     @Override
     protected void onPause() {
         super.onPause();
-        //JCVideoPlayer.releaseAllVideos();
     }
 
     @Override
@@ -150,15 +152,19 @@ public class HomeActivity extends BaseActivity implements HomeView {
         super.onDestroy();
     }
 
+    /*
+     * 关键方法：视图的展现
+     */
     @Override
     public void initializeViews(List<BaseLazyFragment> fragments, List<NavigationEntity> navigationList) {
 
         if (null != fragments && !fragments.isEmpty()) {
             mViewPager.setEnableScroll(false);
             mViewPager.setOffscreenPageLimit(fragments.size());
-            mViewPager.setAdapter(new VPHomeAdapter(getSupportFragmentManager(), fragments));
+            mViewPager.setAdapter(new VPHomeAdapter(getSupportFragmentManager(), fragments)); // FragmentPagerAdapter
         }
 
+         // recommended design for navigation drawers.
         mActionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.drawer_open, R.string.drawer_close) {
 
             @Override
@@ -177,6 +183,7 @@ public class HomeActivity extends BaseActivity implements HomeView {
         mActionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         mDrawerLayout.setDrawerListener(mActionBarDrawerToggle);
 
+         // 导航栏的设置
         mNavListAdapter = new HelperAdapter<NavigationEntity>(navigationList, HomeActivity.this, R.layout.item_list_navigation) {
             @Override
             public void HelpConvert(HelperViewHolder viewHolder, int position, NavigationEntity item) {
