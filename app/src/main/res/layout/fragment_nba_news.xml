@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- 滑动标题栏 -->
     <com.yuyh.library.view.viewpager.indicator.ScrollIndicatorView
         android:id="@+id/nba_news_indicator"
         android:layout_width="match_parent"
