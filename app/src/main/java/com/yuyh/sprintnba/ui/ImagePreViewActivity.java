@@ -8,8 +8,8 @@ import android.view.MenuItem;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.ui.adapter.VPImagePreViewAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.ImagePreViewPresenter;
-import com.yuyh.sprintnba.ui.view.ImagePreView;
+import com.yuyh.sprintnba.mvp.presenter.impl.ImagePreViewPresenter;
+import com.yuyh.sprintnba.mvp.view.ImagePreView;
 
 import java.util.List;
 

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
 
-import com.yuyh.sprintnba.view.LoadingDialog;
+import com.yuyh.sprintnba.component.LoadingDialog;
 
 /**
  * 懒加载Fragment，待进度条

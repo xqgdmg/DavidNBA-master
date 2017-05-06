@@ -11,10 +11,10 @@ import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.event.ThreadContentEvent;
 import com.yuyh.sprintnba.app.Constant;
-import com.yuyh.sprintnba.ui.presenter.impl.ThreadDetailPresenterImpl;
+import com.yuyh.sprintnba.mvp.presenter.impl.ThreadDetailPresenterImpl;
 import com.yuyh.sprintnba.ui.adapter.VPThreadAdapter;
-import com.yuyh.sprintnba.ui.view.ThreadDetailView;
-import com.yuyh.sprintnba.view.VerticalViewPager;
+import com.yuyh.sprintnba.mvp.view.ThreadDetailView;
+import com.yuyh.sprintnba.component.VerticalViewPager;
 import com.yuyh.library.utils.toast.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;

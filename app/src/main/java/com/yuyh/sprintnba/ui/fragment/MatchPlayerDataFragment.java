@@ -10,9 +10,9 @@ import com.yuyh.sprintnba.event.RefreshCompleteEvent;
 import com.yuyh.sprintnba.event.RefreshEvent;
 import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.sprintnba.ui.adapter.MatchPlayerDataAdapter;
-import com.yuyh.sprintnba.ui.presenter.Presenter;
-import com.yuyh.sprintnba.ui.presenter.impl.MatchPlayerDataPresenter;
-import com.yuyh.sprintnba.ui.view.MatchPlayerDataView;
+import com.yuyh.sprintnba.mvp.presenter.Presenter;
+import com.yuyh.sprintnba.mvp.presenter.impl.MatchPlayerDataPresenter;
+import com.yuyh.sprintnba.mvp.view.MatchPlayerDataView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

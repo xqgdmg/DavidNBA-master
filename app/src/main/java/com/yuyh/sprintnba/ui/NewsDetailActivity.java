@@ -24,11 +24,11 @@ import com.yuyh.library.view.common.Info;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.retrofit.bean.news.NewsDetail;
-import com.yuyh.sprintnba.ui.presenter.NewsDetailPresenter;
-import com.yuyh.sprintnba.ui.presenter.impl.NewsDetailPresenterImpl;
-import com.yuyh.sprintnba.ui.view.NewsDetailView;
+import com.yuyh.sprintnba.mvp.presenter.NewsDetailPresenter;
+import com.yuyh.sprintnba.mvp.presenter.impl.NewsDetailPresenterImpl;
+import com.yuyh.sprintnba.mvp.view.NewsDetailView;
 import com.yuyh.sprintnba.utils.ImageUtils;
-import com.yuyh.sprintnba.view.PhotoView;
+import com.yuyh.sprintnba.component.PhotoView;
 
 import java.util.List;
 import java.util.Map;

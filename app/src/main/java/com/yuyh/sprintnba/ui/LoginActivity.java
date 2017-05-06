@@ -13,8 +13,8 @@ import com.flyco.dialog.listener.OnBtnClickL;
 import com.flyco.dialog.widget.NormalDialog;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
-import com.yuyh.sprintnba.ui.presenter.impl.LoginPresenterImpl;
-import com.yuyh.sprintnba.ui.view.LoginView;
+import com.yuyh.sprintnba.mvp.presenter.impl.LoginPresenterImpl;
+import com.yuyh.sprintnba.mvp.view.LoginView;
 import com.yuyh.sprintnba.utils.SettingPrefUtils;
 import com.yuyh.library.utils.toast.ToastUtils;
 

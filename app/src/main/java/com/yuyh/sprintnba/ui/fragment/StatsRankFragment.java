@@ -19,9 +19,9 @@ import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.support.SpaceItemDecoration;
 import com.yuyh.sprintnba.support.SupportRecyclerView;
 import com.yuyh.sprintnba.ui.adapter.StatsRankAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.StatsRankPresenterImpl;
-import com.yuyh.sprintnba.ui.view.StatsRankView;
-import com.yuyh.sprintnba.view.ToggleLayout;
+import com.yuyh.sprintnba.mvp.presenter.impl.StatsRankPresenterImpl;
+import com.yuyh.sprintnba.mvp.view.StatsRankView;
+import com.yuyh.sprintnba.component.ToggleLayout;
 
 import java.util.ArrayList;
 import java.util.List;

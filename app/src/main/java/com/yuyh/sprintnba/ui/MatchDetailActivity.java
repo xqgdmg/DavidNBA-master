@@ -17,11 +17,11 @@ import com.yuyh.sprintnba.event.RefreshCompleteEvent;
 import com.yuyh.sprintnba.event.RefreshEvent;
 import com.yuyh.sprintnba.retrofit.bean.match.MatchBaseInfo;
 import com.yuyh.sprintnba.ui.adapter.VPGameDetailAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.MatchDetailPresenter;
-import com.yuyh.sprintnba.ui.view.MatchDetailView;
+import com.yuyh.sprintnba.mvp.presenter.impl.MatchDetailPresenter;
+import com.yuyh.sprintnba.mvp.view.MatchDetailView;
 import com.yuyh.sprintnba.utils.FrescoUtils;
-import com.yuyh.sprintnba.view.GameDetailScrollBar;
-import com.yuyh.sprintnba.view.StickyNavLayout;
+import com.yuyh.sprintnba.component.GameDetailScrollBar;
+import com.yuyh.sprintnba.component.StickyNavLayout;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

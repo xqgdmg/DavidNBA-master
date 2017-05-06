@@ -14,8 +14,8 @@ import com.yuyh.sprintnba.event.RefreshEvent;
 import com.yuyh.sprintnba.retrofit.bean.match.LiveDetail;
 import com.yuyh.sprintnba.support.OnLvScrollListener;
 import com.yuyh.sprintnba.ui.adapter.MatchLiveAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.MatchLivePresenter;
-import com.yuyh.sprintnba.ui.view.MatchLiveView;
+import com.yuyh.sprintnba.mvp.presenter.impl.MatchLivePresenter;
+import com.yuyh.sprintnba.mvp.view.MatchLiveView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

@@ -9,11 +9,11 @@ import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.base.BaseWebActivity;
 import com.yuyh.sprintnba.retrofit.bean.player.Teams;
-import com.yuyh.sprintnba.ui.presenter.Presenter;
-import com.yuyh.sprintnba.ui.presenter.impl.TeamsListPresenterImpl;
+import com.yuyh.sprintnba.mvp.presenter.Presenter;
+import com.yuyh.sprintnba.mvp.presenter.impl.TeamsListPresenterImpl;
 import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.ui.adapter.TeamsListAdapter;
-import com.yuyh.sprintnba.ui.view.TeamsView;
+import com.yuyh.sprintnba.mvp.view.TeamsView;
 
 import java.util.ArrayList;
 import java.util.List;

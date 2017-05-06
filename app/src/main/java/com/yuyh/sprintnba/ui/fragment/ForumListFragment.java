@@ -16,9 +16,9 @@ import com.yuyh.sprintnba.support.SpaceItemDecoration;
 import com.yuyh.sprintnba.support.SupportRecyclerView;
 import com.yuyh.sprintnba.ui.ThreadListActivity;
 import com.yuyh.sprintnba.ui.adapter.ForumListAdapter;
-import com.yuyh.sprintnba.ui.presenter.Presenter;
-import com.yuyh.sprintnba.ui.presenter.impl.ForumListPresenterImpl;
-import com.yuyh.sprintnba.ui.view.ForumListView;
+import com.yuyh.sprintnba.mvp.presenter.Presenter;
+import com.yuyh.sprintnba.mvp.presenter.impl.ForumListPresenterImpl;
+import com.yuyh.sprintnba.mvp.view.ForumListView;
 import com.yuyh.library.utils.DimenUtils;
 
 import java.util.ArrayList;

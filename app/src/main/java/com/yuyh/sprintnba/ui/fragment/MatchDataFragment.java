@@ -15,8 +15,8 @@ import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.event.RefreshEvent;
 import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.sprintnba.ui.adapter.MatchStatisticsAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.MatchDataPresenter;
-import com.yuyh.sprintnba.ui.view.MatchDataView;
+import com.yuyh.sprintnba.mvp.presenter.impl.MatchDataPresenter;
+import com.yuyh.sprintnba.mvp.view.MatchDataView;
 import com.yuyh.sprintnba.utils.FrescoUtils;
 
 import org.greenrobot.eventbus.EventBus;

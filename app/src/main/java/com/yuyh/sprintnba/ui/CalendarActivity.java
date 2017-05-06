@@ -9,11 +9,11 @@ import com.yuyh.library.utils.log.LogUtils;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
 import com.yuyh.sprintnba.retrofit.bean.match.MatchCalendar;
-import com.yuyh.sprintnba.ui.presenter.impl.CalendarPagePresenter;
-import com.yuyh.sprintnba.ui.view.CalendarPageView;
-import com.yuyh.sprintnba.view.calendar.CalConstant;
-import com.yuyh.sprintnba.view.calendar.CalendarView;
-import com.yuyh.sprintnba.view.calendar.ICalendarView;
+import com.yuyh.sprintnba.mvp.presenter.impl.CalendarPagePresenter;
+import com.yuyh.sprintnba.mvp.view.CalendarPageView;
+import com.yuyh.sprintnba.component.calendar.CalConstant;
+import com.yuyh.sprintnba.component.calendar.CalendarView;
+import com.yuyh.sprintnba.component.calendar.ICalendarView;
 
 import java.lang.reflect.Field;
 import java.util.Calendar;

@@ -16,9 +16,9 @@ import com.yuyh.library.utils.toast.ToastUtils;
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseLazyFragment;
 import com.yuyh.sprintnba.utils.FrescoUtils;
-import com.yuyh.sprintnba.view.ImageLoadProgressBar;
-import com.yuyh.sprintnba.view.photodraweeview.OnPhotoTapListener;
-import com.yuyh.sprintnba.view.photodraweeview.PhotoDraweeView;
+import com.yuyh.sprintnba.component.ImageLoadProgressBar;
+import com.yuyh.sprintnba.component.photodraweeview.OnPhotoTapListener;
+import com.yuyh.sprintnba.component.photodraweeview.PhotoDraweeView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

@@ -20,8 +20,8 @@ import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.support.SpaceItemDecoration;
 import com.yuyh.sprintnba.support.SupportRecyclerView;
 import com.yuyh.sprintnba.ui.adapter.TeamsRankAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.TeamSortPresenter;
-import com.yuyh.sprintnba.ui.view.TeamSortView;
+import com.yuyh.sprintnba.mvp.presenter.impl.TeamSortPresenter;
+import com.yuyh.sprintnba.mvp.view.TeamSortView;
 
 import java.util.ArrayList;
 import java.util.List;

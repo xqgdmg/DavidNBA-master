@@ -14,8 +14,8 @@ import com.yuyh.sprintnba.retrofit.bean.match.MatchStat;
 import com.yuyh.sprintnba.ui.adapter.MatchHistoryAdapter;
 import com.yuyh.sprintnba.ui.adapter.MatchLMaxPlayerdapter;
 import com.yuyh.sprintnba.ui.adapter.MatchRecentAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.MatchLookForwardPresenter;
-import com.yuyh.sprintnba.ui.view.MatchLookForwardView;
+import com.yuyh.sprintnba.mvp.presenter.impl.MatchLookForwardPresenter;
+import com.yuyh.sprintnba.mvp.view.MatchLookForwardView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

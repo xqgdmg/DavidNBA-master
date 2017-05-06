@@ -8,7 +8,7 @@ import com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
-import com.yuyh.sprintnba.view.photodraweeview.PhotoDraweeView;
+import com.yuyh.sprintnba.component.photodraweeview.PhotoDraweeView;
 
 /**
  * @author yuyh.

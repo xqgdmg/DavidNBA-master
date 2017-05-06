@@ -29,8 +29,8 @@ import com.yuyh.sprintnba.support.OnListItemClickListener;
 import com.yuyh.sprintnba.support.SpaceItemDecoration;
 import com.yuyh.sprintnba.support.SupportRecyclerView;
 import com.yuyh.sprintnba.ui.adapter.ThreadListAdapter;
-import com.yuyh.sprintnba.ui.presenter.impl.ThreadListPresenterImpl;
-import com.yuyh.sprintnba.ui.view.ThreadListView;
+import com.yuyh.sprintnba.mvp.presenter.impl.ThreadListPresenterImpl;
+import com.yuyh.sprintnba.mvp.view.ThreadListView;
 import com.yuyh.sprintnba.utils.FrescoUtils;
 
 import java.util.ArrayList;

@@ -32,7 +32,7 @@ import android.view.WindowManager;
 
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 import com.yuyh.sprintnba.R;
-import com.yuyh.sprintnba.view.LoadingDialog;
+import com.yuyh.sprintnba.component.LoadingDialog;
 
 import butterknife.ButterKnife;
 

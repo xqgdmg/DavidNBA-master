@@ -6,9 +6,9 @@ import android.widget.EditText;
 
 import com.yuyh.sprintnba.R;
 import com.yuyh.sprintnba.base.BaseSwipeBackCompatActivity;
-import com.yuyh.sprintnba.ui.presenter.impl.ReportPresenterImpl;
+import com.yuyh.sprintnba.mvp.presenter.impl.ReportPresenterImpl;
 import com.yuyh.sprintnba.ui.adapter.ReportAdapter;
-import com.yuyh.sprintnba.ui.view.ReportView;
+import com.yuyh.sprintnba.mvp.view.ReportView;
 import com.yuyh.library.view.list.NoScrollListView;
 
 import java.util.ArrayList;

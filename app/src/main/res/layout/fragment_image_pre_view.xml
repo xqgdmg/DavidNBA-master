@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.yuyh.sprintnba.view.photodraweeview.PhotoDraweeView
+    <com.yuyh.sprintnba.component.photodraweeview.PhotoDraweeView
         android:id="@+id/pdvImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
