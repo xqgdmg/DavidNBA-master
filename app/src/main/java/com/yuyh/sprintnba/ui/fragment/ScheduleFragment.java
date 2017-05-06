@@ -82,6 +82,9 @@ public class ScheduleFragment extends BaseLazyFragment {
         materialRefreshLayout.setLoadMore(false);
     }
 
+    /*
+     * 因为不是 mvp 所以数据处理也是在这里了
+     */
     private void requestMatchs(String date, boolean isRefresh) {
         showLoadingDialog();
         TencentService.getMatchsByDate(date, isRefresh, new RequestCallback<Matchs>() {

@@ -25,6 +25,7 @@ public class HomeBizImp implements HomeBiz {
 
     /*
      * 获取 6个 fragment
+     * 好像是导航栏里面的
      */
     @Override
     public List<BaseLazyFragment> getPagerFragments() {

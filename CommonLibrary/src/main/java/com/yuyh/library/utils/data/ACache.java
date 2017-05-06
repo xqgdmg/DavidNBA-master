@@ -35,6 +35,12 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
+/*
+ * 居然也是用的 ACache
+ * 1.CacheDir 里面的 ACache
+ * 2.对象输入输出流
+ * 3.
+ */
 public class ACache {
     public static final int TIME_HOUR = 60 * 60;
     public static final int TIME_DAY = TIME_HOUR * 24;
@@ -391,7 +397,7 @@ public class ACache {
             try {
                 bais = new ByteArrayInputStream(data);
                 ois = new ObjectInputStream(bais);
-                Object reObject = ois.readObject();
+                Object reObject = ois.readObject(); // 对象输入流，读取到保存的数据
                 return reObject;
             } catch (Exception e) {
                 e.printStackTrace();
