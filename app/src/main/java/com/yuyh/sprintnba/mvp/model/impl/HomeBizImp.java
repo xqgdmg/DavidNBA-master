@@ -25,12 +25,12 @@ public class HomeBizImp implements HomeBiz {
 
     /*
      * 获取 6个 fragment
-     * 好像是导航栏里面的
+     * 导航栏里面的右边
      */
     @Override
     public List<BaseLazyFragment> getPagerFragments() {
         List<BaseLazyFragment> fragments = new ArrayList<BaseLazyFragment>() {{
-            add(new NewsFragment()); // nba 头条
+            add(new NewsFragment()); // nba 头条（主页面叫 今日头条 ）
             add(new ScheduleFragment()); // 赛事直播
             add(new TeamSortFragment()); // 球队战绩
             add(new StatsRankFragment()); // 数据排行
@@ -41,7 +41,7 @@ public class HomeBizImp implements HomeBiz {
     }
 
     /*
-     * 获取导航栏的条目
+     * 获取导航栏的标题
      */
     @Override
     public List<NavigationEntity> getNavigationList(Context context) {
