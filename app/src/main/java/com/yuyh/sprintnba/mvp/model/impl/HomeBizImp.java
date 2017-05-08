@@ -30,12 +30,12 @@ public class HomeBizImp implements HomeBiz {
     @Override
     public List<BaseLazyFragment> getPagerFragments() {
         List<BaseLazyFragment> fragments = new ArrayList<BaseLazyFragment>() {{
-            add(new NewsFragment());
-            add(new ScheduleFragment());
-            add(new TeamSortFragment());
-            add(new StatsRankFragment());
-            add(new ForumListFragment());
-            add(new OtherFragment());
+            add(new NewsFragment()); // nba 头条
+            add(new ScheduleFragment()); // 赛事直播
+            add(new TeamSortFragment()); // 球队战绩
+            add(new StatsRankFragment()); // 数据排行
+            add(new ForumListFragment()); // 虎扑专区
+            add(new OtherFragment()); // 其他
         }};
         return fragments;
     }

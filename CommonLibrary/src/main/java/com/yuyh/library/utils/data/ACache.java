@@ -45,6 +45,9 @@ import java.util.concurrent.atomic.AtomicLong;
  * 1.CacheDir 里面的 ACache
  * 2.对象输入输出流
  * 3.50 mb
+ *
+ * 一般获取缓存的方法：public Object getAsObject(String key) {}
+ *
  */
 public class ACache {
     public static final int TIME_HOUR = 60 * 60;

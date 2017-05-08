@@ -33,6 +33,7 @@ import butterknife.InjectView;
 /**
  * @author yuyh.
  * @date 16/6/5.
+ * 数据排行
  */
 public class StatsRankFragment extends BaseLazyFragment implements StatsRankView, ToggleLayout.OnToggleListener {
 

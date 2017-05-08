@@ -34,6 +34,7 @@ import butterknife.InjectView;
 
 /**
  * 这个不是 MVP
+ * 赛事直播
  */
 public class ScheduleFragment extends BaseLazyFragment {
 
@@ -61,7 +62,7 @@ public class ScheduleFragment extends BaseLazyFragment {
         mActivity.invalidateOptionsMenu();
 
         initView();
-        requestMatchs(date, true);
+        requestMatchsData(date, true);
     }
 
     private void initView() {
@@ -85,7 +86,7 @@ public class ScheduleFragment extends BaseLazyFragment {
     /*
      * 因为不是 mvp 所以数据处理也是在这里了
      */
-    private void requestMatchs(String date, boolean isRefresh) {
+    private void requestMatchsData(String date, boolean isRefresh) {
         showLoadingDialog();
         TencentService.getMatchsByDate(date, isRefresh, new RequestCallback<Matchs>() {
             @Override
@@ -110,10 +111,13 @@ public class ScheduleFragment extends BaseLazyFragment {
     private class RefreshListener extends MaterialRefreshListener {
         @Override
         public void onRefresh(final MaterialRefreshLayout materialRefreshLayout) {
-            requestMatchs(date, true);
+            requestMatchsData(date, true);
         }
     }
 
+    /*
+     * 请求完成后的UI，显示
+     */
     private void complete() {
         recyclerView.setEmptyView(emptyView);
         adapter.notifyDataSetChanged();
@@ -126,7 +130,7 @@ public class ScheduleFragment extends BaseLazyFragment {
     public void onEventMainThread(CalendarEvent msg) {
         date = msg.getDate();
         LogUtils.i(msg.getDate());
-        requestMatchs(date, true);
+        requestMatchsData(date, true);
     }
 
     @Override

@@ -28,6 +28,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
+ * 虎扑专区
  */
 public class ForumListFragment extends BaseLazyFragment implements ForumListView {
 

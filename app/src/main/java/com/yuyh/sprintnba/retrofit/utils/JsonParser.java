@@ -31,6 +31,7 @@ import java.util.Map;
 /**
  * @author yuyh.
  * @date 16/6/4.
+ * 为什么要分开
  */
 public class JsonParser {
 
@@ -189,6 +190,9 @@ public class JsonParser {
         return rank;
     }
 
+    /*
+     * 球队战绩
+     */
     public static TeamsRank parseTeamsRank(String jsonStr) {
         TeamsRank rank = new TeamsRank();
         String dataStr = JsonParser.parseBase(rank, jsonStr);

@@ -21,6 +21,7 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 
 /**
  * Fragment 嵌套 Fragment（ViewPager）
+ * nba 头条
  */
 public class NewsFragment extends BaseLazyFragment implements NewsView {
 

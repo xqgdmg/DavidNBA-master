@@ -32,6 +32,7 @@ import butterknife.InjectView;
 /**
  * @author yuyh.
  * @date 16/6/5.
+ * 球队战绩
  */
 public class TeamSortFragment extends BaseLazyFragment implements TeamSortView {
 
@@ -61,7 +62,7 @@ public class TeamSortFragment extends BaseLazyFragment implements TeamSortView {
 
         initView();
         presenter = new TeamSortPresenter(mActivity, this);
-        presenter.requestTeamsRank(false);
+        presenter.requestTeamsRank(false); // view + data
     }
 
     private void initView() {
