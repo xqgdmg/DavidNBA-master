@@ -26,6 +26,8 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 /**
  * Created by Kyrie.Y on 2016/6/6.
+ * 1.不带视频
+ * 2.带视频
  */
 public class NewsAdapter extends HelperAdapter<NewsItem.NewsItemBean> {
 
@@ -46,8 +48,9 @@ public class NewsAdapter extends HelperAdapter<NewsItem.NewsItemBean> {
 
         if (item.atype.equals("2")) { // 视频
             final JCVideoPlayerStandard videoPlayer = viewHolder.getView(R.id.vpVideo);
-            if (TextUtils.isEmpty(item.realUrl)) {
+            if (TextUtils.isEmpty(item.realUrl)) { // 存放腾讯视频真实地址为空
                 videoPlayer.setUp("", item.title);
+                 // 重新获取地址，拼接地址
                 TencentService.getVideoRealUrl(item.vid, new RequestCallback<VideoRealUrl>() {
                     @Override
                     public void onSuccess(VideoRealUrl real) {
@@ -65,7 +68,7 @@ public class NewsAdapter extends HelperAdapter<NewsItem.NewsItemBean> {
                     }
                 });
             } else {
-                videoPlayer.setUp(item.realUrl, item.title);
+                videoPlayer.setUp(item.realUrl, item.title); // 有实际地址，直接设置
             }
 
             videoPlayer.thumbImageView.setController(FrescoUtils.getController(item.imgurl, videoPlayer.thumbImageView));
@@ -74,7 +77,7 @@ public class NewsAdapter extends HelperAdapter<NewsItem.NewsItemBean> {
             params.height = DimenUtils.getScreenWidth() / 2;
             params.width = ViewGroup.LayoutParams.MATCH_PARENT;
             videoPlayer.setLayoutParams(params);
-        } else {
+        } else { // 图文
             SimpleDraweeView iv = viewHolder.getView(R.id.ivBannerImg);
             if (iv != null) { // @bugreport NullPointerException
                 iv.setController(FrescoUtils.getController(item.imgurl, iv));

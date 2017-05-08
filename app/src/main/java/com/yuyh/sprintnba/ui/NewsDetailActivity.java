@@ -37,6 +37,10 @@ import java.util.Set;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
+/*
+ * 今日头条，条目点击过来
+ * photoView 显示大图，可以旋转
+ */
 public class NewsDetailActivity extends BaseSwipeBackCompatActivity implements NewsDetailView {
 
     public static final String ARTICLE_ID = "arcId";
@@ -105,6 +109,8 @@ public class NewsDetailActivity extends BaseSwipeBackCompatActivity implements N
         });
         mPhotoView.setScaleType(ImageView.ScaleType.FIT_START);
         mPhotoView.enable();
+
+         // 长按保存图片
         mPhotoView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -130,18 +136,22 @@ public class NewsDetailActivity extends BaseSwipeBackCompatActivity implements N
         final ActionSheetDialog dialog = new ActionSheetDialog(mContext, stringItems, mPhotoView);
         dialog.isTitleShow(false).show();
 
+         // dialog 的条目点击
         dialog.setOnOperItemClickL(new OnOperItemClickL() {
             @Override
             public void onOperItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 mPhotoView.setDrawingCacheEnabled(true);
-                final Bitmap bmp = Bitmap.createBitmap(mPhotoView.getDrawingCache());
+                final Bitmap bmp = Bitmap.createBitmap(mPhotoView.getDrawingCache()); // 从 PhotoView 的缓存中获取的 bitmap
+
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
+                         // 保存图片
                         if (ImageUtils.saveImageToGallery(mContext, bmp)) {
-                            Looper.prepare();
+                            Looper.prepare(); // Initialize the current thread as a looper.
                             ToastUtils.showToast("保存图片成功");
-                            Looper.loop();
+                            Looper.loop(); // Run the message queue in this thread.
                         } else {
                             Looper.prepare();
                             ToastUtils.showToast("保存图片失败");

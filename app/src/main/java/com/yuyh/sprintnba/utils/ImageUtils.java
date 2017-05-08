@@ -185,7 +185,7 @@ public class ImageUtils {
         }
         try {
             FileOutputStream fos = new FileOutputStream(file);
-            bmp.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            bmp.compress(Bitmap.CompressFormat.JPEG, 100, fos); // 相当于没有压缩，保存原图
             fos.flush();
             fos.close();
         } catch (FileNotFoundException e) {

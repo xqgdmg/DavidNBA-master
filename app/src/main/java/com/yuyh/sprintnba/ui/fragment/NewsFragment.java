@@ -20,7 +20,7 @@ import com.yuyh.library.view.viewpager.indicator.transition.OnTransitionTextList
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 
 /**
- * Fragment 嵌套 Fragment（ViewPager）
+ * Fragment 嵌套 Fragment（ViewPager 带可以滑动的标题）
  * nba 头条
  */
 public class NewsFragment extends BaseLazyFragment implements NewsView {
@@ -39,7 +39,7 @@ public class NewsFragment extends BaseLazyFragment implements NewsView {
         
         Presenter presenter = new NBANewsPresenterImpl(mActivity, this);
 
-        presenter.initialized();
+        presenter.initialized(); // initialized() 实际上是调用 view 的方法 initializeViews 进行 view data binding
     }
 
     /*

@@ -62,12 +62,16 @@ public class NewsListFragment extends BaseLazyFragment {
     }
 
     private void initView() {
+         // NewsAdapter 带两种类型的布局
         adapter = new NewsAdapter(list, mActivity, R.layout.item_list_news_normal, R.layout.item_list_news_video);
+
+         // 条目点击
         adapter.setOnItemClickListener(new OnListItemClickListener<NewsItem.NewsItemBean>() {
             @Override
             public void onItemClick(View view, int position, NewsItem.NewsItemBean data) {
                 Intent intent;
                 switch (newsType) {
+                     // 后面三个都是带视频的
                     case VIDEO:
                     case DEPTH:
                     case HIGHLIGHT:
@@ -76,6 +80,7 @@ public class NewsListFragment extends BaseLazyFragment {
                         intent.putExtra(BaseWebActivity.BUNDLE_KEY_TITLE, data.title);
                         startActivity(intent);
                         break;
+                     // 前面两个都是不带视频的，跳新闻详情
                     case BANNER:
                     case NEWS:
                     default:

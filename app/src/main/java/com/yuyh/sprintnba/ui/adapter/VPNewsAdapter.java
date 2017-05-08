@@ -17,13 +17,13 @@ import com.yuyh.library.view.viewpager.indicator.FragmentListPageAdapter;
 import com.yuyh.library.view.viewpager.indicator.IndicatorViewPager;
 
 /**
- * 活动标题的 adapter
- * 和 标题下面 VP的 adapter
+ * nba 头条5个主 fragment 和 标题的 adapter
+ *
  * 厉害了，可以返回两个 adapter
  */
 public class VPNewsAdapter extends IndicatorViewPager.IndicatorFragmentPagerAdapter {
     private LayoutInflater inflate;
-    private String[] names;
+    private String[] names; // 标题名
 
     public VPNewsAdapter(Context context, String[] names, FragmentManager fragmentManager) {
         super(fragmentManager);
@@ -36,6 +36,9 @@ public class VPNewsAdapter extends IndicatorViewPager.IndicatorFragmentPagerAdap
         return names.length;
     }
 
+    /*
+     * 获取标题的视图
+     */
     @Override
     public View getViewForTab(int position, View convertView, ViewGroup container) {
         if (convertView == null) {
@@ -48,9 +51,12 @@ public class VPNewsAdapter extends IndicatorViewPager.IndicatorFragmentPagerAdap
         return convertView;
     }
 
+    /*
+     * 获取 5 个主 Fragment
+     */
     @Override
     public Fragment getFragmentForPage(int position) {
-        NewsListFragment fragment = new NewsListFragment();
+        NewsListFragment fragment = new NewsListFragment(); // 同一个基础布局
         Bundle bundle = new Bundle();
         bundle.putInt(NewsListFragment.INTENT_INT_INDEX, position);
         Constant.NewsType newsTypeBundle;

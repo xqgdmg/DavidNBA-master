@@ -18,8 +18,9 @@ import java.util.List;
 
 /*
  * 首页逻辑，实现类
- * 1.获取 6个 fragment
- * 2.获取导航栏的条目
+ * 1.获取 6个 主fragment
+ * 2.获取导航栏的标题
+ * 3.点击切换至 Presenter 中定义，在 view 中具体实现
  */
 public class HomeBizImp implements HomeBiz {
 
