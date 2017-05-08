@@ -47,7 +47,7 @@ public class NewsAdapter extends HelperAdapter<NewsItem.NewsItemBean> {
     protected void HelperBindData(final HelperViewHolder viewHolder, final int position, final NewsItem.NewsItemBean item) {
 
         if (item.atype.equals("2")) { // 视频
-            final JCVideoPlayerStandard videoPlayer = viewHolder.getView(R.id.vpVideo);
+            final JCVideoPlayerStandard videoPlayer = viewHolder.getView(R.id.vpVideo); // viewHolder.getView 是第三方库
             if (TextUtils.isEmpty(item.realUrl)) { // 存放腾讯视频真实地址为空
                 videoPlayer.setUp("", item.title);
                  // 重新获取地址，拼接地址
@@ -71,12 +71,14 @@ public class NewsAdapter extends HelperAdapter<NewsItem.NewsItemBean> {
                 videoPlayer.setUp(item.realUrl, item.title); // 有实际地址，直接设置
             }
 
+             // 节操播放器设置控制
             videoPlayer.thumbImageView.setController(FrescoUtils.getController(item.imgurl, videoPlayer.thumbImageView));
+             // 设置包体和日期
             viewHolder.setText(R.id.tvVideoTitle, item.title).setText(R.id.tvVideoTime, item.pub_time);
             ViewGroup.LayoutParams params = videoPlayer.getLayoutParams();
             params.height = DimenUtils.getScreenWidth() / 2;
             params.width = ViewGroup.LayoutParams.MATCH_PARENT;
-            videoPlayer.setLayoutParams(params);
+            videoPlayer.setLayoutParams(params); // 设置布局参数
         } else { // 图文
             SimpleDraweeView iv = viewHolder.getView(R.id.ivBannerImg);
             if (iv != null) { // @bugreport NullPointerException

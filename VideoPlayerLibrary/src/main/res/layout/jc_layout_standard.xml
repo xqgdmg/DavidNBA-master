@@ -13,6 +13,7 @@
 
     </RelativeLayout>
 
+    <!--  -->
     <ImageView
         android:id="@+id/cover"
         android:layout_width="wrap_content"
@@ -40,6 +41,7 @@
         app:placeholderImage ="@drawable/dwPrimaryBg"
         app:failureImage="@drawable/dwPrimaryBg"/>
 
+    <!-- 时间进度和 全屏按钮 ，点击之后可见 -->
     <LinearLayout
         android:id="@+id/layout_bottom"
         android:layout_width="match_parent"

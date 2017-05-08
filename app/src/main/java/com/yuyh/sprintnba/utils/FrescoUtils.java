@@ -13,6 +13,7 @@ import com.yuyh.sprintnba.component.photodraweeview.PhotoDraweeView;
 /**
  * @author yuyh.
  * @date 16/7/1.
+ * Fresco 帮助类
  */
 public class FrescoUtils {
 
