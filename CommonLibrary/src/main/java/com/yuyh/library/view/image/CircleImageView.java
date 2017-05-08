@@ -23,7 +23,8 @@ import com.yuyh.library.R;
  * 圆形的ImageView
  * 实现方法：
  *      1.获取自定义属性
- *      2.
+ *      2.setup 阴影，边框，图片 画笔
+ *      3.重写 ondraw 方法
  *
  * @author yuyh.
  * @date 16/4/10.
@@ -106,6 +107,9 @@ public class CircleImageView extends ImageView {
         }
     }
 
+    /*
+     * 绘制圆形
+     */
     @Override
     protected void onDraw(Canvas canvas) {
         if (getDrawable() == null) {
@@ -206,6 +210,9 @@ public class CircleImageView extends ImageView {
         }
     }
 
+    /*
+     * 阴影，边框，图片
+     */
     private void setup() {
         if (!mReady) {
             mSetupPending = true;
@@ -249,21 +256,27 @@ public class CircleImageView extends ImageView {
         invalidate();
     }
 
+    /*
+     * 阴影矩阵
+     */
     private void updateShaderMatrix() {
         float scale;
         float dx = 0;
         float dy = 0;
 
-        mShaderMatrix.set(null);
+        mShaderMatrix.set(null); // 阴影矩阵
 
+         //
         if (mBitmapWidth * mDrawableRect.height() > mDrawableRect.width() * mBitmapHeight) {
             scale = mDrawableRect.height() / (float) mBitmapHeight;
-            dx = (mDrawableRect.width() - mBitmapWidth * scale) * 0.5f;
+            dx = (mDrawableRect.width() - mBitmapWidth * scale) * 0.5f; // x 坐标， 缩放之后的一半
         } else {
             scale = mDrawableRect.width() / (float) mBitmapWidth;
-            dy = (mDrawableRect.height() - mBitmapHeight * scale) * 0.5f;
+            dy = (mDrawableRect.height() - mBitmapHeight * scale) * 0.5f; // y 坐标， 缩放之后的一半
         }
         mShaderMatrix.setScale(scale, scale);
+
+
         mShaderMatrix.postTranslate((int) (dx + 0.5f) + mBorderWidth, (int) (dy + 0.5f) + mBorderWidth);
 
         mBitmapShader.setLocalMatrix(mShaderMatrix);
