@@ -21,6 +21,9 @@ import com.yuyh.library.R;
 
 /**
  * 圆形的ImageView
+ * 实现方法：
+ *      1.获取自定义属性
+ *      2.
  *
  * @author yuyh.
  * @date 16/4/10.
@@ -76,7 +79,7 @@ public class CircleImageView extends ImageView {
     }
 
     private void init() {
-        super.setScaleType(SCALE_TYPE);
+        super.setScaleType(SCALE_TYPE); // 设置 centerCrop
         mReady = true;
         if (mSetupPending) {
             setup();
@@ -213,24 +216,34 @@ public class CircleImageView extends ImageView {
             return;
         }
 
+         // 影子 Call this to create a new shader that will draw with a bitmap.
         mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
+         // 图片画笔，影子
         mBitmapPaint.setAntiAlias(true);
         mBitmapPaint.setShader(mBitmapShader);
 
-        mBorderPaint.setStyle(Paint.Style.STROKE);
-        mBorderPaint.setAntiAlias(true);
-        mBorderPaint.setColor(mBorderColor);
-        mBorderPaint.setStrokeWidth(mBorderWidth);
+         // 边框画笔
+        mBorderPaint.setStyle(Paint.Style.STROKE); // 这种模式才能不填充满整个屏幕
+        mBorderPaint.setStrokeWidth(mBorderWidth); // 设置画笔的范围，fill 模式会忽略这个属性
 
+        mBorderPaint.setAntiAlias(true);
+
+        mBorderPaint.setColor(mBorderColor); // 边框的颜色
+
+         // 图片宽高
         mBitmapHeight = mBitmap.getHeight();
         mBitmapWidth = mBitmap.getWidth();
 
+        // 边框矩阵
         mBorderRect.set(0, 0, getWidth(), getHeight());
+        // 边框圆弧 =  (默认矩阵高度 - 边框) / 2 ; (默认矩阵宽度 - 边框) / 2 的最小值
         mBorderRadius = Math.min((mBorderRect.height() - mBorderWidth) / 2, (mBorderRect.width() - mBorderWidth) / 2);
 
+         // 图片矩阵
         mDrawableRect.set(mBorderWidth, mBorderWidth, mBorderRect.width() - mBorderWidth, mBorderRect.height() - mBorderWidth);
-        mDrawableRadius = Math.min(mDrawableRect.height() / 2, mDrawableRect.width() / 2);
+         // 图片圆弧
+        mDrawableRadius = Math.min(mDrawableRect.height() / 2, mDrawableRect.width() / 2); // 这个直接是宽高的一半
 
         updateShaderMatrix();
         invalidate();
