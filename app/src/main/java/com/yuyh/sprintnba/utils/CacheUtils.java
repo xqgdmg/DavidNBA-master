@@ -5,6 +5,9 @@ import android.os.Environment;
 
 import java.io.File;
 
+/*
+ * 计算缓存的工具类
+ */
 public class CacheUtils {
 
     public static String getCacheSize(Context context) {

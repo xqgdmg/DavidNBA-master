@@ -89,15 +89,25 @@ public class OtherFragment extends BaseLazyFragment {
         startActivityForResult(intent, REQ_LOGIN);
     }
 
+    /*
+     * 清除缓存
+     */
     @OnClick(R.id.rlClearCache)
     public void clearCache() {
-        // PrefsUtils prefs = new PrefsUtils();
-        // prefs.clearAll();
+         // 首先先清理 ACache 的缓存
         ACache cache = ACache.get(AppUtils.getAppContext());
         cache.clear();
+
+         // 清理 app 的缓存
         CacheUtils.cleanApplicationCache(mActivity);
+
         ToastUtils.showSingleLongToast("缓存清理成功");
+
+        // 显示缓存内容 1.filesDir 2.cacheDir 3.ExternalCacheDir
+         // 清理了手机的全部缓存，glide 的缓存路径在 cacheDir
         tvCacheSize.setText(CacheUtils.getCacheSize(mActivity));
+
+         // 默默的重新创建缓存的文件夹
         ACache.get(AppUtils.getAppContext());
     }
 
