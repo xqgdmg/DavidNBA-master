@@ -10,7 +10,7 @@ import com.yuyh.sprintnba.mvp.view.HomeView;
 
 /**
  * view 和 model 结合
- * 点击标题之后切换右边的fragment
+ * 点击左边的标题之后切换右边的fragment
  * 具体逻辑在 view 中实现
  */
 public class HomePresenterImpl implements Presenter {
